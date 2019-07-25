@@ -1,4 +1,4 @@
-# Create a virtual machine from two disks (OS + data disk) in an existing virtual network
+# Create two NGINX DNS Proxies into an existing or new virtual network
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FPL-DNS-Proxy%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
