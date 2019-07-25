@@ -1,3 +1,25 @@
+# Create a virtual machine from two disks (OS + data disk) in an existing virtual network
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2microsoft%2PL-DNS-Proxy%2master%2azuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+  
+  
+</a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2microsoft%2PL-DNS-Proxy%2master%2azuredeploy.json" target="_blank">
+    <img src="http://armviz.io/visualizebutton.png"/>
+</a>
+
+## Prerequisites
+
+- Name of the existing VNET and subnet you want to connect the new virtual machine to.
+- Name of the Resource Group that the VNET resides in.
+
+```
+NOTE
+
+This template will create an additional Standard_LRS storage account for enabling boot diagnostics each time you execute this template. To avoid running into storage account limits, it's best to delete the storage account when the VM is deleted.
+
+
 
 # Contributing
 
