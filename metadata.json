@@ -1,0 +1,10 @@
+{
+  "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
+  "type": "QuickStart",
+  "itemDisplayName": "2 Unbuntu VMs in AS with NGINX Installed,
+  "description": "This template allows you to create 2 Virtual Machines in an Availability Set with NGINX installed behind a loadbalancer",
+  "summary": "2 VMs behind a Load Balancer",
+  "githubUsername": "jgmitz",
+  "dateUpdated": "2019-07-25"
+}
+
