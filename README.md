@@ -1,4 +1,4 @@
-# Create two NGINX DNS Proxies into an existing or new virtual network
+# Deploy two NGINX DNS Proxies with a new or exsiting Virtual Network and Storage
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FPL-DNS-Proxy%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
@@ -16,7 +16,9 @@
 ```
 NOTE
 
-This template will create an additional Standard_LRS storage account for enabling boot diagnostics each time you execute this template. To avoid running into storage account limits, it's best to delete the storage account when the VM is deleted.
+This template allows deploying two Ubuntu/NGINX VMs using new or existing resources for the Virtual Network and Storage. It also allows for choosing between SSH and Password authenticate. The templates uses conditions and logic functions to remove the need for nested deployments.
+
+This template contains extra parameters to allow for the existing resources use cases, which is a common scenario for Solution Templates in the Azure Marketplace.
 
 
 
