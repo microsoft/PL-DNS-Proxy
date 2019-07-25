@@ -13,13 +13,11 @@
 - Name of the existing VNET and subnet you want to connect the new virtual machine to.
 - Name of the Resource Group that the VNET resides in.
 
-```
-NOTE
-
 This template allows deploying two Ubuntu/NGINX VMs using new or existing resources for the Virtual Network and Storage. It also allows for choosing between SSH and Password authenticate. The templates uses conditions and logic functions to remove the need for nested deployments.
 
 This template contains extra parameters to allow for the existing resources use cases, which is a common scenario for Solution Templates in the Azure Marketplace.
 
+```
 
 
 # Contributing
