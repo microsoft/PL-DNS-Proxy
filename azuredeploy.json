@@ -192,7 +192,7 @@
                 {
                   "name": "ipconfig1",
                   "properties": {
-                    "privateIPAllocationMethod": "Static",
+                    "privateIPAllocationMethod": "Dynamic",
                     "subnet": {
                       "id": "[resourceId(parameters('virtualNetworkResourceGroupName'), 'Microsoft.Network/virtualNetworks/subnets/', parameters('virtualNetworkName'), parameters('subnetName'))]"
                     }
