@@ -1,4 +1,4 @@
-# Deploy two NGINX DNS Proxies with a new or exsiting Virtual Network and Storage
+# Deploy VMSS of NGINX DNS Proxies into an exsiting Virtual Network.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FPL-DNS-Proxy%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
@@ -13,7 +13,7 @@
 - Name of the existing VNET and subnet you want to connect the new virtual machine to.
 - Name of the Resource Group that the VNET resides in.
 
-This template allows deploying two Ubuntu/NGINX VMs using new or existing resources for the Virtual Network and Storage. It also allows for choosing between SSH and Password authenticate. The templates uses conditions and logic functions to remove the need for nested deployments.
+This template allows deploying two Ubuntu/NGINX VMs using new or existing resources for the Virtual Network. It also allows for choosing between SSH and Password authenticate. The templates uses conditions and logic functions to remove the need for nested deployments.
 
 Please fill in your current vnet details in the relevant fields on the page. As an example:
 ![alt text](https://github.com/jgmitter/images/blob/master/sample.png)
