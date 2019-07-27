@@ -75,50 +75,6 @@
                 "description": "Number of VM instances (100 or less)."
             }     
           },
-          "virtualNetworkNewOrExisting": {
-            "type": "string",
-            "defaultValue": "new",
-            "metadata": {
-              "description": "Determines whether or not a new virtual network should be provisioned."
-            }
-          },
-          "virtualNetworkName": {
-            "type": "string",
-            "defaultValue": "VirtualNetwork",
-            "metadata": {
-              "description": "Name of the virtual network"
-            }
-          },
-          "addressPrefixes": {
-            "type": "array",
-            "defaultValue": [
-              "10.0.0.0/16"
-            ],
-            "metadata": {
-              "description": "Address prefix of the virtual network"
-            }
-          },
-          "subnetName": {
-            "type": "string",
-            "defaultValue": "default",
-            "metadata": {
-              "description": "Name of the subnet"
-            }
-          },
-          "subnetPrefix": {
-            "type": "string",
-            "defaultValue": "10.0.0.0/24",
-            "metadata": {
-              "description": "Subnet prefix of the virtual network"
-            }
-          },
-          "virtualNetworkResourceGroupName": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().name]",
-            "metadata": {
-              "description": "Name of the resource group for the existing virtual network"
-            }
-          },
           "existingVnetName": {
             "type": "string",
             "metadata": {
@@ -173,7 +129,7 @@
             "name": "[variables('nicName')]",
             "location": "[parameters('location')]",
             "dependsOn": [
-              "[parameters('virtualNetworkName')]"
+              "[parameters('existingVnetName')]"
             ],
             "properties": {
               "ipConfigurations": [
@@ -258,7 +214,7 @@
                 ]
             },
             "dependsOn": [
-                "[parameters('virtualNetworkName')]"
+                "[parameters('existingVnetName')]"
             ]
         },
         {
