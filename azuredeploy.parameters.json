@@ -14,11 +14,11 @@
       "existingVnetResourceGroupName": {
         "value": "GET-PREREQ-existingVnetResourceGroupName"
       },
-      "existingVnetName": {
-        "value": "GET-PREREQ-existingVnetName"
-      },
-      "existingSubnetName": {
-        "value": "GET-PREREQ-existingSubnetName"
+    "existingVnetName": {
+      "value": "vnet"
+    },
+    "existingSubnetName": {
+      "value": "subnet"
       },
       "adminPasswordOrKey": {
         "value": "GEN-SSH-PUB-KEY"
