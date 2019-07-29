@@ -70,7 +70,7 @@
           },
           "existingVnetName": {
             "type": "string",
-            "defaultValue": "[resourceId('Microsoft.Network/virtualNetworks/subnets', '/', 'subnet1')]",
+            "defaultValue": "[resourceId('Microsoft.Network/virtualNetworks', '/', 'PL-Client-VNET')]",
             "metadata": {
               "description": "vName of the existing virtual network to deploy the scale set into."
             }
