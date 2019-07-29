@@ -87,7 +87,7 @@
               "description": "Name of the existing subnet to deploy the scale set into."
             }
           }
-    },
+        },
     "variables": {
         "namingInfix": "[toLower(substring(concat(parameters('vmssName'), uniqueString(resourceGroup().id)), 0, 9))]",
         "loadBalancerName": "[concat(variables('namingInfix'), 'lb')]",
