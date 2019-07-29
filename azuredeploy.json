@@ -70,6 +70,7 @@
     }
   },
   "variables": {
+    "subnetId": "[resourceId(parameters('existingVnetResourceGroupName'), 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVnetName'), parameters('existingSubnetName'))]",
     "loadBalancerName": "loadBalancer",
     "loadBalancerFrontEndName": "loadBalancerFrontEnd",
     "loadBalancerBackEndName": "loadBalancerBackEnd",
@@ -135,7 +136,7 @@
                       "name": "ipconfig",
                       "properties": {
                         "subnet": {
-                          "id": "[resourceId(parameters('existingVnetResourceGroupName'), 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVnetName'), parameters('existingSubNetName'))]"
+                            "id": "[variables('subnetId')]"
                         },
                         "loadBalancerBackendAddressPools": [
                           {
@@ -171,7 +172,7 @@
             "name": "[variables('loadBalancerFrontEndName')]",
             "properties": {
                 "subnet": {
-                "id": "[resourceId(parameters('existingVnetResourceGroupName'), 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVnetName'), parameters('existingSubNetName'))]"
+                "id": "[variables('subnetId')]"
               }
             }
           }
