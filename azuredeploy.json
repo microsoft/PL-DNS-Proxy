@@ -9,13 +9,6 @@
               "description": "Location to for the resources."
             }
           },
-          "vmName": {
-            "type": "string",
-            "defaultValue": "linux-vm",
-            "metadata": {
-              "description": "Name for the Virtual Machine."
-            }
-          },
           "adminUsername": {
             "type": "string",
             "metadata": {
@@ -77,12 +70,14 @@
           },
           "existingVnetName": {
             "type": "string",
+            "defaultValue": "[resourceGroup().VNET]",
             "metadata": {
               "description": "vName of the existing virtual network to deploy the scale set into."
             }
           },
           "existingSubnetName": {
             "type": "string",
+            "defaultValue": "[resourceGroup().subnet]",
             "metadata": {
               "description": "Name of the existing subnet to deploy the scale set into."
             }
