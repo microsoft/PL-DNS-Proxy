@@ -14,7 +14,7 @@
     "adminUsername": {
       "value": "azureuser"
     },
-    "adminPassword": {
+    "adminPasswordOrKey": {
       "value": "GEN-PASSWORD"
     },
     "existingVnetName": {
