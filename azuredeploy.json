@@ -163,9 +163,6 @@
       "name": "[variables('loadBalancerName')]",
       "location": "[resourceGroup().location]",
       "apiVersion": "2017-06-01",
-      "dependsOn": [
-            "[parameters('existingVnetName')]"
-        ],
       "properties": {
         "frontendIPConfigurations": [
           {
