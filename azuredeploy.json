@@ -36,7 +36,7 @@
             "type": "string",
             "defaultValue": "Standard_D2s_v3",
             "allowedValues": [
-                "Standard_D2s_v3,",
+                "Standard_D2s_v3",
                 "Standard_D4s_v3"],
             "metadata": {
               "description": "Size for the Virtual Machine."
