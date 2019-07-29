@@ -36,7 +36,7 @@
             "type": "string",
             "defaultValue": "Standard_D2s_v3",
             "allowedValues": [
-                "Standard_D2s_v3",
+                "Standard_D2s_v3,",
                 "Standard_D4s_v3"],
             "metadata": {
               "description": "Size for the Virtual Machine."
@@ -70,14 +70,12 @@
           },
           "existingVnetName": {
             "type": "string",
-            "defaultValue": "[resourceId('Microsoft.Network/virtualNetworks', 'PL-Client-VNET')]",
             "metadata": {
               "description": "vName of the existing virtual network to deploy the scale set into."
             }
           },
           "existingSubnetName": {
             "type": "string",
-            "defaultValue": "[resourceId('Microsoft.Network/virtualNetworks/subnets', '/', 'subnet1')]",
             "metadata": {
               "description": "Name of the existing subnet to deploy the scale set into."
             }
@@ -133,7 +131,7 @@
                   "properties": {
                     "privateIPAllocationMethod": "Static",
                     "subnet": {
-                      "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVnetName'), parameters('existingSubNetName'))]"
+                        "id": "[resourceId(resourceGroup().name, 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVnetName'), parameters('existingSubNetName'))]"
                     }
                   }
                 }
