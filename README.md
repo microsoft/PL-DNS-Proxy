@@ -26,6 +26,7 @@ sudo vi /etc/nginx/nginx.conf
 
 add the following module:
 
+{
 stream {
     upstream dns_servers {
         server 168.63.129.16:53;
@@ -40,7 +41,7 @@ stream {
      error_log  /var/log/nginx/dns.log info;
     }
     }
-
+}
 
 
 sudo service nginx restart
