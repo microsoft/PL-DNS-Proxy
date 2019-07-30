@@ -12,6 +12,8 @@
 
 - Name of the existing VNET and subnet you want to connect the new virtual machine to.
 - Name of the Resource Group that the VNET resides in.
+- Depending on region deployed you might need to adjust template for vm SKU size supported. 
+
 
 This template allows deploying two Ubuntu/NGINX VMs using an existing resource for the Virtual Network and subnet. It also allows for choosing between SSH and Password authenticate. 
 
