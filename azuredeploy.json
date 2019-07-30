@@ -72,9 +72,9 @@
   },
   "variables": {
     "subnetId": "[resourceId(parameters('existingVnetResourceGroupName'), 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVnetName'), parameters('existingSubnetName'))]",
-    "loadBalancerName": "loadBalancer",
-    "loadBalancerFrontEndName": "loadBalancerFrontEnd",
-    "loadBalancerBackEndName": "loadBalancerBackEnd",
+    "loadBalancerName": "DNSProxyloadBalancer",
+    "loadBalancerFrontEndName": "DNSloadBalancerFrontEnd",
+    "loadBalancerBackEndName": "DNSloadBalancerBackEnd",
     "loadBalancerProbeName": "loadBalancerDNSProbe",
     "loadBalancerNatPoolName": "loadBalancerNatPool",
     "linuxConfiguration": {
