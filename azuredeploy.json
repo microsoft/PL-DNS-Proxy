@@ -3,15 +3,12 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmSku": {
-        "type": "string",
-        "defaultValue": "Standard_D2s_v3",
-        "allowedValues": [
-            "Standard_D2s_v3,",
-            "Standard_D4s_v3"],
-        "metadata": {
-          "description": "Size for the Virtual Machine."
-        }
-      },
+            "type": "array",
+            "metadata": {
+               "displayName": "VM SKUs",
+               "strongType": "vmSKUs"
+            }
+         },
     "vmssName": {
       "type": "string",
       "metadata": {
