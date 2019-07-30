@@ -39,9 +39,10 @@ stream {
      proxy_responses 1;
      error_log  /var/log/nginx/dns.log info;
     }
-}
+    }
 
-:wq!
+
+
 sudo service nginx restart
 
 
