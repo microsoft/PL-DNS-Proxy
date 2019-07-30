@@ -26,10 +26,11 @@ sudo vi /etc/nginx/nginx.conf
 
 add the following module:
 
-stream {
-    upstream dns_servers {
-        server 168.63.129.16:53;
+    stream {
+          upstream dns_servers {
+           server 168.63.129.16:53;
     }
+    
     server {
      listen 10.1.1.5:53  udp;
      listen 10.1.1.5:53; #tcp
@@ -41,7 +42,6 @@ stream {
 }
 
     
-
 
 sudo service nginx restart
 
