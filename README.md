@@ -17,8 +17,8 @@
 
 This template allows deploying two Ubuntu/NGINX VMs using an existing resource for the Virtual Network and subnet. It also allows for choosing between SSH and Password authenticate. 
 
-
-
+- To edit your NGINX.conf: (50001-3)
+ssh -p 5000X {username}@{loadbalancer-ip-address} to each NGINX VM to update its NGINX.conf
 
 
 # Contributing
