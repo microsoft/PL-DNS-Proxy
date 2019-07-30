@@ -11,7 +11,7 @@
 
 
 
-![alt text](https://github.com/jgmitter/images/blob/master/SharedScreenshot.png)
+![alt text](https://github.com/jgmitter/images/blob/master/SharedScreenshot.jpg)
 
 
 ## Prerequisites
