@@ -8,6 +8,12 @@
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
+
+
+
+![alt text](https://github.com/jgmitter/images/blob/master/SharedScreenshot.png)
+
+
 ## Prerequisites
 
 - Name of the existing VNET and subnet you want to connect the new virtual machine to.
