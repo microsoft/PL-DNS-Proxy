@@ -32,14 +32,14 @@ add the following module:
     }
     
     server {
-     listen 10.1.1.5:53  udp;
-     listen 10.1.1.5:53; #tcp
-     proxy_bind 10.1.1.5;
+     listen x.x.x.x:53  udp;
+     listen x.x.x.x:53; #tcp
+     proxy_bind x.x.x.x;
      proxy_pass dns_servers;
      proxy_responses 1;
      error_log  /var/log/nginx/dns.log info;
     }
-}
+    }
 
     
 
