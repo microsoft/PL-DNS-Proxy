@@ -184,7 +184,7 @@
       "name": "[variables('loadBalancerName')]",
       "location": "[resourceGroup().location]",
       "sku": {
-        "name": "[variables('lbSkuName')]"
+        "name": "[variables('lbSkuName')]",
       "apiVersion": "2017-06-01",
       "properties": {
         "frontendIPConfigurations": [
