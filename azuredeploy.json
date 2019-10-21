@@ -73,6 +73,7 @@
   "variables": {
     "subnetId": "[resourceId(parameters('existingVnetResourceGroupName'), 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVnetName'), parameters('existingSubnetName'))]",
     "loadBalancerName": "DNSProxyloadBalancer",
+    "lbSkuName": "Standard",
     "loadBalancerFrontEndName": "DNSloadBalancerFrontEnd",
     "loadBalancerBackEndName": "DNSloadBalancerBackEnd",
     "loadBalancerProbeName": "loadBalancerDNSProbe",
@@ -182,6 +183,8 @@
       "type": "Microsoft.Network/loadBalancers",
       "name": "[variables('loadBalancerName')]",
       "location": "[resourceGroup().location]",
+      "sku": {
+        "name": "[variables('lbSkuName')]"
       "apiVersion": "2017-06-01",
       "properties": {
         "frontendIPConfigurations": [
