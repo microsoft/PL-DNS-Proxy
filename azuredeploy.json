@@ -1,5 +1,5 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
         "vmSku": {
@@ -75,7 +75,7 @@
     "loadBalancerName": "DNSProxyloadBalancer",
     "loadBalancerFrontEndName": "DNSloadBalancerFrontEnd",
     "loadBalancerBackEndName": "DNSloadBalancerBackEnd",
-    "loadBalancerProbeName": "loadBalancerDNSProbe",
+    "loadBalancerProbeName": "loadBalancerSSHProbe",
     "loadBalancerNatPoolName": "loadBalancerNatPool",
     "linuxConfiguration": {
         "disablePasswordAuthentication": true,
@@ -209,7 +209,7 @@
               "backendAddressPool": {
                 "id": "[concat(resourceId('Microsoft.Network/loadBalancers', variables('loadBalancerName')), '/backendAddressPools/', variables('loadBalancerBackendName'))]"
               },
-              "protocol": "Tcp",
+              "protocol": "Udp",
               "frontendPort": 53,
               "backendPort": 53,
               "enableFloatingIP": false,
@@ -225,7 +225,7 @@
             "name": "[variables('loadBalancerProbeName')]",
             "properties": {
               "protocol": "Tcp",
-              "port": 53,
+              "port": 22,
               "intervalInSeconds": 5,
               "numberOfProbes": 2
             }

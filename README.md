@@ -1,4 +1,4 @@
-# Deploy VMSS of a NGINX DNS Proxy into an exsiting Virtual Network.
+# Deploy VMSS of a NGINX DNS Proxy into an existing Virtual Network.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FPL-DNS-Proxy%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
@@ -23,7 +23,7 @@
 
 This template allows deploying two Ubuntu/NGINX VMs using an existing resource for the Virtual Network and subnet. It also allows for choosing between SSH and Password authenticate. 
 
-- To edit your NGINX.conf: (50001-3)
+- To edit your NGINX.conf: (50000-3)
 ssh -p 5000X {username}@{loadbalancer-ip-address} to each NGINX VM to update its NGINX.conf
 
 Update x.x.x.x with the local private IP of each VMSS instance:
