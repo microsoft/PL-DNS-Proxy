@@ -44,7 +44,7 @@ server {
 }
 EOF
 
-myip=`hostname -I`
+myip=`hostname -i`
 sed -i "s/x.x.x.x/$myip/" /etc/nginx/nginx.conf
 
 
