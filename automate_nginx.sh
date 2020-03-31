@@ -26,7 +26,8 @@ apt-get update -y && apt-get upgrade -y
 apt-get install -y nginx
 echo "Hello World from host" $HOSTNAME "!" | sudo tee -a /var/www/html/index.html
 
-echo >> /etc/nginx/nginx.conf <<EOF
+touch /etc/nginx/nginx.conf
+cat >> /etc/nginx/nginx.conf <<EOF
 stream {
       upstream dns_servers {
        server 168.63.129.16:53;
@@ -43,7 +44,7 @@ server {
 }
 EOF
 
-myip=`hostname -I`
+myip=`hostname -i`
 sed -i "s/x.x.x.x/$myip/" /etc/nginx/nginx.conf
 
 
